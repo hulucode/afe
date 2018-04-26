@@ -7,7 +7,7 @@ main{
 
 .logo{
     display: flex;
-    width: 260px;
+    width: 240px;
     height: 100%;
     align-items:center;
     overflow: hidden;
@@ -49,8 +49,8 @@ main{
 
 .nav{
     display: flex;
-    width: 100%;
     height: 100%;
+    width: calc(~"100% - 240px - 80px");
     align-items:flex-end;
     overflow: hidden;
 }
@@ -63,5 +63,18 @@ main{
 }
 
 .other{
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.other span{
+    width: 80px;
+    color: #1890ff;
+    cursor: pointer;
+}
+
+.other span:hover{
+    color: green;
 }

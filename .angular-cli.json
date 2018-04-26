@@ -11,7 +11,6 @@
         "assets",
         "favicon.ico"
       ],
-      "deployUrl": "/home",
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
@@ -57,6 +56,8 @@
   },
   "defaults": {
     "styleExt": "less",
-    "component": {}
+    "build": {
+      "baseHref": "/home/"      
+    }
   }
 }
