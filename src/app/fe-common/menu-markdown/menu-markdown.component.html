@@ -1,0 +1,21 @@
+<main>
+    <div class="menu">
+        <ul nz-menu [nzMode]="'inline'" style="width: 200px">
+            <ng-container *ngFor="let menu of _menus">
+                <li nz-submenu [(nzOpen)]="menu.isOpen">
+                    <span title>
+                        <i class="{{menu.icon}}"></i> {{menu.title}}
+                    </span>
+                    <ul>
+                        <ng-container *ngFor="let submenu of menu.submenus">
+                            <li nz-menu-item [nzSelected]="_selectTitle == submenu.title" (click)="nzClick($event,submenu)">{{submenu.title}}</li>
+                        </ng-container>
+                    </ul>
+                </li>
+            </ng-container>
+        </ul>
+    </div>
+    <div class="content">
+        <app-markdown [path]="_path"></app-markdown>
+    </div>
+</main>

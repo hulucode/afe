@@ -7,9 +7,41 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevelopRulesComponent implements OnInit {
 
-  constructor() { }
+  menus: any[] = [
+    {
+      icon: 'anticon anticon-file-text',
+      title: '什么是规范？',
+      isOpen: true,
+      submenus: [
+        {
+          title: '二级菜单1',
+          data: {
+            url: './assets/data/develop-rules/1.md'
+          }
+        }
+      ]
+    },
+    {
+      icon: 'anticon anticon-file-text',
+      title: '为什么规范？',
+      isOpen: true,
+      submenus: [
+        {
+          title: '二级菜单2',
+          data: {
+            url: './assets/data/develop-rules/2.md'
+          }
+        }
+      ]
+    }
+  ];
+
+  constructor() {
+
+  }
 
   ngOnInit() {
+
   }
 
 }

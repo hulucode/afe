@@ -1,0 +1,13 @@
+<main>
+  <div class="steps">
+    <div class="step" *ngFor="let step of _steps;let i = index;">
+      <button nz-button nzType="{{_selectIndex == i ? 'primary':'default'}}" (click)="stepSelect(step,i)">{{step.title}}</button>
+      <div *ngIf="i < _steps.length - 1" class="line">
+        <div [style.background-color]="_selectIndex > i ? '#1890ff':'#d9d9d9'"></div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <app-markdown [path]="_path"></app-markdown>
+  </div>
+</main>

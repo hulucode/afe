@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DevelopRulesComponent } from './develop-rules/develop-rules.component';
-import { DeveopRulesRoutingModule } from './deveop-rules-routing/deveop-rules-routing.module';
-import { FeCommonModule } from '../fe-common/fe-common.module';
+import { DeveopRulesRoutingModule } from './deveop-rules-routing.module';
+import { MarkdownModule } from '../../fe-common/markdown/markdown.module';
+import { MenuMarkdownModule } from '../../fe-common/menu-markdown/menu-markdown.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    FeCommonModule,
+    MenuMarkdownModule,
     DeveopRulesRoutingModule
   ],
   declarations: [DevelopRulesComponent]

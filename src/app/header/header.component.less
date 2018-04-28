@@ -7,7 +7,7 @@ main{
 
 .logo{
     display: flex;
-    width: 240px;
+    width: 200px;
     height: 100%;
     align-items:center;
     overflow: hidden;
@@ -16,7 +16,7 @@ main{
 .logo .content{
     display: flex;
     width: 100%;
-    height: 34px;
+    height: 44px;
     justify-content:center;
     overflow: hidden;
     border-right: 1px solid #cccccc;
@@ -31,18 +31,18 @@ main{
     height: 100%;
     flex-direction: column;
     margin-left: 10px;
-    font-size: 12px;
     align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 12px;
 }
 
 .logo .content .company{
-    height: 100%;
     width: 100%;
     text-align: center;
 }
 
 .logo .content .team{
-    height: 100%;
     width: 100%;
     text-align: center;
 }
@@ -50,15 +50,16 @@ main{
 .nav{
     display: flex;
     height: 100%;
-    width: calc(~"100% - 240px - 80px");
+    width: calc(~"100% - 200px - 80px");
     align-items:flex-end;
     overflow: hidden;
 }
 
 .nav .tabset{
+    margin-top: 5px;
     margin-left: 20px;
     width: 100%;
-    height: 44px;
+    height: 55px;
     overflow: hidden;
 }
 
@@ -77,4 +78,18 @@ main{
 
 .other span:hover{
     color: green;
+}
+
+::ng-deep{
+    .ant-tabs-nav .ant-tabs-tab {
+        height: 55px !important;
+    }
+
+    .ant-tabs-bar {
+        border-bottom: 1px solid transparent !important;
+    }
+
+    .ant-tabs-nav-scroll {
+        margin-top: 1px !important;
+    }
 }

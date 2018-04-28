@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FeCommonComponent } from './fe-common.component';
+import { MenuMarkdownComponent } from './menu-markdown.component';
 
-describe('FeCommonComponent', () => {
-  let component: FeCommonComponent;
-  let fixture: ComponentFixture<FeCommonComponent>;
+describe('MenuMarkdownComponent', () => {
+  let component: MenuMarkdownComponent;
+  let fixture: ComponentFixture<MenuMarkdownComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FeCommonComponent ]
+      declarations: [ MenuMarkdownComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FeCommonComponent);
+    fixture = TestBed.createComponent(MenuMarkdownComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
