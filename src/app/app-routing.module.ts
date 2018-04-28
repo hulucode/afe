@@ -15,6 +15,10 @@ const appRoutes: Routes = [
   {
     path: 'develop-process',
     loadChildren: './content/develop-process/develop-process.module#DevelopProcessModule'
+  },
+  {
+    path: 'learning-sharing',
+    loadChildren: './content/learning-sharing/learning-sharing.module#LearningSharingModule'
   }
 ];
 

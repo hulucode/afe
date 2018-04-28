@@ -1,0 +1,19 @@
+<main>
+  <div class="timeline">
+    <div class="container">
+      <nz-timeline>
+        <ng-container *ngFor="let timeline of _timelines;let i = index">
+          <nz-timeline-item nzColor="{{timeline.color}}">
+            <div class="timeline-item" [style.color]="_selectIndex == i ? '#000000':'rgba(0, 0, 0, 0.65)'" (click)="timelineSelect(timeline,i)">
+              <p>{{timeline.title}}</p>
+              <p>{{timeline.time}}</p>
+            </div>
+          </nz-timeline-item>
+        </ng-container>
+      </nz-timeline>
+    </div>
+  </div>
+  <div class="content">
+    <app-markdown [path]="_path"></app-markdown>
+  </div>
+</main>

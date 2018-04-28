@@ -7,13 +7,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MenuMarkdownComponent implements OnInit {
 
+  _selectIndex;
+
   _path;
-  _selectTitle;
+
   _menus: any[];
 
   @Input() set menus(menus: any[]) {
     if (menus && menus.length > 0) {
-      this._selectTitle = menus[0].submenus[0].title;
+      this._selectIndex = '00';
       this._path = menus[0].submenus[0].data.url;
     }
     this._menus = menus;
@@ -27,7 +29,8 @@ export class MenuMarkdownComponent implements OnInit {
 
   }
 
-  nzClick(event: any, selectMenu: any) {
-    this._path = selectMenu.data.url;
+  nzClick(menu: any, index: string) {
+    this._selectIndex = index;
+    this._path = menu.data.url;
   }
 }

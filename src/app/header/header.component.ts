@@ -23,12 +23,6 @@ export class HeaderComponent implements OnInit {
       name: '学习分享',
       icon: 'anticon anticon-share-alt',
       routerLink: '/learning-sharing'
-    },
-    {
-      active: false,
-      name: '人才招聘',
-      icon: 'anticon anticon-user-add',
-      routerLink: '/talents-invite'
     }
   ];
 

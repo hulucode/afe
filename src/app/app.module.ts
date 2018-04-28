@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
