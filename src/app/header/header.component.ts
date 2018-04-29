@@ -23,6 +23,11 @@ export class HeaderComponent implements OnInit {
       name: '学习分享',
       icon: 'anticon anticon-share-alt',
       routerLink: '/learning-sharing'
+    },
+    {
+      name: '我们团队',
+      icon: 'anticon anticon-team',
+      routerLink: '/team-mien'
     }
   ];
 
@@ -48,6 +53,14 @@ export class HeaderComponent implements OnInit {
   nzSelectChange(data: any) {
     const routerLink = this.tabs[data.index].routerLink;
     this.router.navigateByUrl(routerLink);
+  }
+
+  joinUs() {
+    this.router.navigateByUrl('/recruiting');
+  }
+
+  openSite(url) {
+    window.open(url, '_blank');
   }
 
 }

@@ -11,7 +11,6 @@ import { MarkdownComponent } from './markdown.component';
   imports: [
     CommonModule,
     RouterModule,
-    HttpClientModule,
     NgZorroAntdModule
   ],
   declarations: [MarkdownComponent],

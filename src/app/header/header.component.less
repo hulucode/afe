@@ -24,6 +24,7 @@ main{
 
 .logo .content img{
     height: 100%;
+    cursor: pointer;
 }
 
 .logo .content .company-team{
@@ -50,7 +51,7 @@ main{
 .nav{
     display: flex;
     height: 100%;
-    width: calc(~"100% - 200px - 80px");
+    width: calc(~"100% - 200px - 100px");
     align-items:flex-end;
     overflow: hidden;
 }
@@ -65,19 +66,20 @@ main{
 
 .other{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100px;
 }
 
 .other span{
-    width: 80px;
     color: #1890ff;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .other span:hover{
-    color: green;
+    color: #188fffc0;
 }
 
 ::ng-deep{

@@ -1,0 +1,19 @@
+<main>
+  <!-- <div class="slogan">We are a Team , Everything is nothing . <button nz-button nzType="primary" [nzSize]="'small'" (click)="joinUs()">加入我们</button></div> -->
+  <div class="slogan">We are a Team , Everything is nothing .</div>
+  <div class="container">
+    <ng-container *ngFor="let member of _members">
+      <div class="content" (click)="memberInfo(member)">
+        <div class="member">
+          <img class="img" src="{{member.img}}">
+          <div class="name">{{member.name}}</div>
+        </div>
+        <div class="intro">
+          <div class="text">
+            <div>{{member.intro}}</div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</main>
