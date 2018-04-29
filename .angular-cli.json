@@ -58,7 +58,7 @@
   "defaults": {
     "styleExt": "less",
     "build": {
-      "baseHref": "/home/"      
+      "baseHref": "/home/"
     }
   }
 }

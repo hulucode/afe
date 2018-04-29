@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { HttpConfig } from '../../http.config';
 
 @Component({
   selector: 'app-learning-sharing',
@@ -7,54 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LearningSharingComponent implements OnInit {
 
-  timelines: any[] = [
-    {
-      title: '学习计划1',
-      time: '2018-10-10',
-      author: 'kevin',
-      status: 'done',
-      data: {
-        url: './assets/data/develop-rules/1.md'
-      }
-    },
-    {
-      title: '学习计划2',
-      time: '2018-10-20',
-      author: 'kevin',
-      data: {
-        url: './assets/data/develop-rules/2.md'
-      }
-    },
-    {
-      title: '学习计划3',
-      time: '2018-10-20',
-      author: 'kevin',
-      data: {
-        url: './assets/data/develop-rules/2.md'
-      }
-    },
-    {
-      title: '学习计划4',
-      time: '2018-10-20',
-      author: 'kevin',
-      status: 'undone',
-      data: {
-        url: './assets/data/develop-rules/2.md'
-      }
-    },
-    {
-      title: '学习计划5',
-      time: '2018-10-20',
-      author: 'kevin',
-      status: 'done',
-      data: {
-        url: './assets/data/develop-rules/2.md'
-      }
-    }
-  ];
+  _timelines: any[];
 
-  constructor() {
-
+  constructor(private http: HttpClient) {
+    this.http.get(`${HttpConfig.learningSharingUrl}/index.json`).toPromise().then(data => {
+      const timelines = data as any[];
+      for (let i = 0; i < timelines.length; i++) {
+        timelines[i].data.url = `${HttpConfig.learningSharingUrl}/${timelines[i].data.url}`;
+      }
+      this._timelines = timelines;
+    });
   }
 
   ngOnInit() {

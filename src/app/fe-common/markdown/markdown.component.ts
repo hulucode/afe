@@ -31,11 +31,13 @@ export class MarkdownComponent implements OnInit {
   safeHtml: SafeHtml = 'loading ...';
 
   @Input() set path(path: string) {
-    this.http.get(path, { responseType: 'text' }).toPromise().then(data => {
-      this.safeHtml = marked(data);
-    }).catch(err => {
-      console.log(err);
-    });
+    if (path) {
+      this.http.get(path, { responseType: 'text' }).toPromise().then(data => {
+        this.safeHtml = marked(data);
+      }).catch(err => {
+        console.log(err);
+      });
+    }
   }
 
   constructor(private http: HttpClient) {

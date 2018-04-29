@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { HttpConfig } from '../../http.config';
 
 @Component({
   selector: 'app-develop-process',
@@ -7,29 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevelopProcessComponent implements OnInit {
 
-  _steps: any[] = [
-    {
-      title: '第一步',
-      data: {
-        url: './assets/data/develop-rules/1.md'
-      }
-    },
-    {
-      title: '第二步',
-      data: {
-        url: './assets/data/develop-rules/2.md'
-      }
-    },
-    {
-      title: '第三步',
-      data: {
-        url: './assets/data/develop-rules/1.md'
-      }
-    }
-  ];
+  _steps: any[];
 
-  constructor() {
-
+  constructor(private http: HttpClient) {
+    this.http.get(`${HttpConfig.developProcessUrl}/index.json`).toPromise().then(data => {
+      const steps = data as any[];
+      for (let i = 0; i < steps.length; i++) {
+        steps[i].data.url = `${HttpConfig.developProcessUrl}/${steps[i].data.url}`;
+      }
+      this._steps = steps;
+    });
   }
 
   ngOnInit() {

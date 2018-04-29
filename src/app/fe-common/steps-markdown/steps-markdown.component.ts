@@ -14,8 +14,10 @@ export class StepsMarkdownComponent implements OnInit {
   _steps: any[];
 
   @Input() set steps(steps: any[]) {
-    this._selectIndex = 0;
-    this._path = steps[0].data.url;
+    if (steps && steps.length > 0) {
+      this._selectIndex = 0;
+      this._path = steps[0].data.url;
+    }
     this._steps = steps;
   }
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { HttpConfig } from '../../http.config';
 
 @Component({
   selector: 'app-develop-rules',
@@ -7,37 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevelopRulesComponent implements OnInit {
 
-  menus: any[] = [
-    {
-      icon: 'anticon anticon-file-text',
-      title: '什么是规范？',
-      isOpen: true,
-      submenus: [
-        {
-          title: '二级菜单1',
-          data: {
-            url: './assets/data/develop-rules/1.md'
-          }
-        }
-      ]
-    },
-    {
-      icon: 'anticon anticon-file-text',
-      title: '为什么规范？',
-      isOpen: true,
-      submenus: [
-        {
-          title: '二级菜单2',
-          data: {
-            url: './assets/data/develop-rules/2.md'
-          }
-        }
-      ]
-    }
-  ];
+  _menus: any[];
 
-  constructor() {
-
+  constructor(private http: HttpClient) {
+    this.http.get(`${HttpConfig.developRulesUrl}/index.json`).toPromise().then(data => {
+      const menus = data as any[];
+      for (let i = 0; i < menus.length; i++) {
+        for (let j = 0; j < menus[i].submenus.length; j++) {
+          menus[i].submenus[j].data.url = `${HttpConfig.developRulesUrl}/${menus[i].submenus[j].data.url}`;
+        }
+      }
+      this._menus = menus;
+    });
   }
 
   ngOnInit() {
