@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-menu-markdown',
@@ -13,6 +13,8 @@ export class MenuMarkdownComponent implements OnInit {
 
   _menus: any[];
 
+  @ViewChild('left') left: ElementRef;
+
   @Input() set menus(menus: any[]) {
     if (menus && menus.length > 0) {
       this._selectIndex = '00';
@@ -26,7 +28,8 @@ export class MenuMarkdownComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    const el = this.left.nativeElement as HTMLElement;
+    el.style.minHeight = (document.documentElement.clientHeight - 104 - 84) + 'px';
   }
 
   nzClick(menu: any, index: string) {

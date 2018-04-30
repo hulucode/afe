@@ -1,5 +1,5 @@
 <main>
-  <div class="steps">
+  <div class="steps" #left>
     <div class="step" *ngFor="let step of _steps;let i = index;">
       <button nz-button nzType="{{_selectIndex == i ? 'primary':'default'}}" (click)="stepSelect(step,i)">{{step.title}}</button>
       <div *ngIf="i < _steps.length - 1" class="line">

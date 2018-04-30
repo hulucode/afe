@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-steps-markdown',
@@ -13,6 +13,8 @@ export class StepsMarkdownComponent implements OnInit {
 
   _steps: any[];
 
+  @ViewChild('left') left: ElementRef;
+
   @Input() set steps(steps: any[]) {
     if (steps && steps.length > 0) {
       this._selectIndex = 0;
@@ -26,7 +28,8 @@ export class StepsMarkdownComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    const el = this.left.nativeElement as HTMLElement;
+    el.style.minHeight = (document.documentElement.clientHeight - 104 - 84) + 'px';
   }
 
   stepSelect(step: any, index: number) {

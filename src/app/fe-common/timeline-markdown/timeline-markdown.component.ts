@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-timeline-markdown',
@@ -12,6 +12,8 @@ export class TimelineMarkdownComponent implements OnInit {
   _selectIndex;
 
   _timelines: any[];
+
+  @ViewChild('left') left: ElementRef;
 
   @Input() set timelines(timelines: any[]) {
     this._selectIndex = 0;
@@ -34,7 +36,8 @@ export class TimelineMarkdownComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    const el = this.left.nativeElement as HTMLElement;
+    el.style.minHeight = (document.documentElement.clientHeight - 104 - 84) + 'px';
   }
 
   timelineSelect(timeline: any, index: number) {
