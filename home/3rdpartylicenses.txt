@@ -80,11 +80,11 @@ MIT
 MIT
 MIT
 
-@angular/router@5.2.10
+ng-zorro-antd@0.7.0-beta.4
 MIT
 MIT
 
-ng-zorro-antd@0.7.0-beta.4
+@angular/router@5.2.10
 MIT
 MIT
 

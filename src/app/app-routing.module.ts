@@ -26,6 +26,10 @@ const appRoutes: Routes = [
         loadChildren: './content/learning-sharing/learning-sharing.module#LearningSharingModule'
       },
       {
+        path: 'daily-affairs',
+        loadChildren: './content/daily-affairs/daily-affairs.module#DailyAffairsModule'
+      },
+      {
         path: 'team-mien',
         loadChildren: './content/team-mien/team-mien.module#TeamMienModule'
       }

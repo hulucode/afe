@@ -16,7 +16,7 @@
       <ng-container *ngFor="let card of _cards">
         <nz-card class="card" [nzBordered]="false" nzTitle="{{card.position}}">
           <ng-container *ngFor="let requirement of card.requirements;let i = index">
-            <p>{{i + ". " + requirement.info}}</p>
+            <p>{{(i + 1) + ". " + requirement.info}}</p>
           </ng-container>
         </nz-card>
       </ng-container>

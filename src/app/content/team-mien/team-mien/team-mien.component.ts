@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { HttpConfig } from '../http.config';
 import { Router } from '@angular/router';
+import { HttpConfig } from '../../http.config';
 
 @Component({
   selector: 'app-team-mien',

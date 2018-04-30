@@ -3,9 +3,7 @@
         <ul nz-menu [nzMode]="'inline'" style="width: 100%">
             <ng-container *ngFor="let menu of _menus;let i = index">
                 <li nz-submenu [(nzOpen)]="menu.isOpen">
-                    <span title>
-                        <i class="{{menu.icon}}"></i> {{menu.title}}
-                    </span>
+                    <span title>{{menu.title}}</span>
                     <ul>
                         <ng-container *ngFor="let submenu of menu.submenus;let j = index">
                             <li nz-menu-item [nzSelected]="_selectIndex == i.toString()+j.toString()" (click)="nzClick(submenu,i.toString()+j.toString())">{{submenu.title}}</li>

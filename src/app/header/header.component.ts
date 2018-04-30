@@ -25,6 +25,11 @@ export class HeaderComponent implements OnInit {
       routerLink: '/learning-sharing'
     },
     {
+      name: '日常事务',
+      icon: 'anticon anticon-appstore-o',
+      routerLink: '/daily-affairs'
+    },
+    {
       name: '我们团队',
       icon: 'anticon anticon-team',
       routerLink: '/team-mien'
