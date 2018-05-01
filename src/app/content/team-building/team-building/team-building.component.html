@@ -1,0 +1,22 @@
+<main>
+  <div class="header">
+    <img class="logo" src="./assets/images/tdlogo2.png" (click)="openSite('https://www.talkingdata.com')">
+    <div class="company">
+      <div class="team">
+        <button class="back-btn" nz-button nzType="default" nzShape="circle" nzSize="small" (click)="backAction()">
+          <i class="anticon anticon-rollback"></i>
+        </button>
+        <span class="welcome">TalkingData FE Team 建设 .</span>
+        <button class="join-us" nz-button nzType="primary" [nzSize]="'small'" (click)="joinUs()">加入我们</button>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container">
+      <app-menu-markdown [menus]="_menus" [otherHeight]="221"></app-menu-markdown>
+    </div>
+  </div>
+  <div class="footer">
+    <app-footer></app-footer>
+  </div>
+</main>

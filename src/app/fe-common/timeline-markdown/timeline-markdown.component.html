@@ -4,9 +4,12 @@
       <nz-timeline>
         <ng-container *ngFor="let timeline of _timelines;let i = index">
           <nz-timeline-item nzColor="{{timeline.color}}">
-            <div class="timeline-item" [style.color]="_selectIndex == i ? '#000000':'rgba(0, 0, 0, 0.65)'" (click)="timelineSelect(timeline,i)">
-              <p>{{timeline.title}}</p>
-              <p>{{timeline.time}}</p>
+            <div class="timeline-item" (click)="timelineSelect(timeline,i)">
+              <p class="title" [style.color]="_selectIndex == i ? '#1890ff':'rgba(0, 0, 0, 0.65)'">{{timeline.title}}</p>
+              <div style="font-size: 12px">
+                <div>{{timeline.author}}</div>
+                <div>{{timeline.time}}</div>
+              </div>
             </div>
           </nz-timeline-item>
         </ng-container>

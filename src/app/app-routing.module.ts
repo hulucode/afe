@@ -22,12 +22,12 @@ const appRoutes: Routes = [
         loadChildren: './content/develop-process/develop-process.module#DevelopProcessModule'
       },
       {
-        path: 'learning-sharing',
-        loadChildren: './content/learning-sharing/learning-sharing.module#LearningSharingModule'
-      },
-      {
         path: 'daily-affairs',
         loadChildren: './content/daily-affairs/daily-affairs.module#DailyAffairsModule'
+      },
+      {
+        path: 'weekly-fe',
+        loadChildren: './content/weekly-fe/weekly-fe.module#WeeklyFeModule'
       },
       {
         path: 'team-mien',
@@ -38,6 +38,10 @@ const appRoutes: Routes = [
   {
     path: 'recruiting',
     loadChildren: './content/recruiting/recruiting.module#RecruitingModule'
+  },
+  {
+    path: 'team-building',
+    loadChildren: './content/team-building/team-building.module#TeamBuildingModule'
   }
 ];
 

@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 marked.setOptions({
   renderer: new marked.Renderer(),
   highlight: function (code) {
-    return hljs.highlightAuto(code, ['typescript']).value;
+    return hljs.highlightAuto(code, ['typescript', 'js', 'html', 'css']).value;
   },
   pedantic: false,
   gfm: true,
@@ -33,7 +33,7 @@ export class MarkdownComponent implements OnInit {
   @Input() set path(path: string) {
     if (path) {
       this.http.get(path, { responseType: 'text' }).toPromise().then(data => {
-        this.safeHtml = marked(data);
+        this.safeHtml = marked(data).replace(/\<pre\>/g, '<pre class="hljs">');
       }).catch(err => {
         console.log(err);
       });

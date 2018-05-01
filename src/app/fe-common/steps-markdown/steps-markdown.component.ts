@@ -15,6 +15,8 @@ export class StepsMarkdownComponent implements OnInit {
 
   @ViewChild('left') left: ElementRef;
 
+  @Input() otherHeight: number;
+
   @Input() set steps(steps: any[]) {
     if (steps && steps.length > 0) {
       this._selectIndex = 0;
@@ -29,7 +31,7 @@ export class StepsMarkdownComponent implements OnInit {
 
   ngOnInit() {
     const el = this.left.nativeElement as HTMLElement;
-    el.style.minHeight = (document.documentElement.clientHeight - 104 - 84) + 'px';
+    el.style.minHeight = (document.documentElement.clientHeight - this.otherHeight) + 'px';
   }
 
   stepSelect(step: any, index: number) {

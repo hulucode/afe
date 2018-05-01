@@ -20,14 +20,14 @@ export class HeaderComponent implements OnInit {
       routerLink: '/develop-process'
     },
     {
-      name: '学习分享',
-      icon: 'anticon anticon-share-alt',
-      routerLink: '/learning-sharing'
-    },
-    {
       name: '日常事务',
       icon: 'anticon anticon-appstore-o',
       routerLink: '/daily-affairs'
+    },
+    {
+      name: '前端周刊',
+      icon: 'anticon anticon-profile',
+      routerLink: '/weekly-fe'
     },
     {
       name: '我们团队',

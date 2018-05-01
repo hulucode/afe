@@ -15,6 +15,8 @@ export class MenuMarkdownComponent implements OnInit {
 
   @ViewChild('left') left: ElementRef;
 
+  @Input() otherHeight: number;
+
   @Input() set menus(menus: any[]) {
     if (menus && menus.length > 0) {
       this._selectIndex = '00';
@@ -29,7 +31,7 @@ export class MenuMarkdownComponent implements OnInit {
 
   ngOnInit() {
     const el = this.left.nativeElement as HTMLElement;
-    el.style.minHeight = (document.documentElement.clientHeight - 104 - 84) + 'px';
+    el.style.minHeight = (document.documentElement.clientHeight - this.otherHeight) + 'px';
   }
 
   nzClick(menu: any, index: string) {

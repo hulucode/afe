@@ -26,8 +26,8 @@ export class TeamMienComponent implements OnInit {
 
   }
 
-  joinUs() {
-    this.router.navigateByUrl('/recruiting');
+  teamBuilding() {
+    this.router.navigateByUrl('/team-building');
   }
 
 }
