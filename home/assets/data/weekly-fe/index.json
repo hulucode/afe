@@ -3,7 +3,7 @@
         "title": "学习计划1",
         "time": "2018-10-10",
         "author": "kevin",
-        "status": "done",
+        "status": "undone",
         "data": {
             "url": "1.md"
         }
@@ -37,7 +37,7 @@
         "title": "学习计划5",
         "time": "2018-10-20",
         "author": "kevin",
-        "status": "done",
+        "status": "undone",
         "data": {
             "url": "2.md"
         }
