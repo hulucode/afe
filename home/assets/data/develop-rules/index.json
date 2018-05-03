@@ -1,0 +1,110 @@
+[
+    {
+        "title": "概述",
+        "isOpen": true,
+        "submenus": [
+            {
+                "title": "介绍",
+                "data": {
+                    "url": "introduce.md"
+                }
+            },
+            {
+                "title": "基本原则",
+                "data": {
+                    "url": "base_tenet.md"
+                }
+            }
+        ]
+    },
+    {
+        "title": "html 规范",
+        "isOpen": true,
+        "submenus": [
+            {
+                "title": "通用约定",
+                "data": {
+                    "url": "html_common_rules.md"
+                }
+            },
+            {
+                "title": "语义化",
+                "data": {
+                    "url": "html_semantization_rules.md"
+                }
+            },
+            {
+                "title": "HEAD",
+                "data": {
+                    "url": "html_head_rules.md"
+                }
+            }
+        ]
+    },
+    {
+        "title": "css 规范",
+        "isOpen": true,
+        "submenus": [
+            {
+                "title": "通用约定",
+                "data": {
+                    "url": "css_common_rules.md"
+                }
+            },
+            {
+                "title": "模块组织",
+                "data": {
+                    "url": "css_module_rules.md"
+                }
+            },
+            {
+                "title": "性能优化",
+                "data": {
+                    "url": "css_optimize_rules.md"
+                }
+            }
+        ]
+    },
+    {
+        "title": "js 规范",
+        "isOpen": true,
+        "submenus": [
+            {
+                "title": "通用约定",
+                "data": {
+                    "url": "js_rules.md"
+                }
+            }
+        ]
+    },
+    {
+        "title": "Angular5",
+        "isOpen": true,
+        "submenus": [
+            {
+                "title": "html 规范",
+                "data": {
+                    "url": "ng_html_rules.md"
+                }
+            },
+            {
+                "title": "less 规范",
+                "data": {
+                    "url": "ng_less_rules.md"
+                }
+            },
+            {
+                "title": "ts 规范",
+                "data": {
+                    "url": "ng_ts_rules.md"
+                }
+            },
+            {
+                "title": "风格指南",
+                "data": {
+                    "url": "ng_style_guide_rules.md"
+                }
+            }
+        ]
+    }
+]
