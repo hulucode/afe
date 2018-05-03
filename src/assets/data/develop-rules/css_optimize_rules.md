@@ -125,8 +125,11 @@ CSS 选择器对性能的影响源于浏览器匹配选择器和文档元素时�
 button#backButton {…}
 /* Recommended */
 #newMenuIcon {…}
+```
+
 3、避免使用标签限制 class 选择器
 
+```
 /* Not recommended */
 treecell.indented {…}
 /* Recommended */

@@ -3,80 +3,106 @@
         "position": "前端工程师",
         "requirements": [
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "3年以上Web前端经验，5年以上开发经验"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "熟练掌握HTML、CSS3、ES6、webpack等规范和技术"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "熟悉W3C标准与ES5、ES6规范，熟悉Web语义化"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "熟练掌握盒模型、常用布局以及浏览器和移动设备兼容性"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "熟练使用至少一种JS框架，熟悉Aangular、Vue、React等，掌握其原理，能独立开发常用组件"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "对前端技术发展有强烈兴趣，有优秀学习能力和强烈的进取心；"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
-            },
-            {
-                "info": "introintrointrointrointrointrointrointro"
-            },
-            {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "良好的团队合作精神和沟通能力；"
             }
         ]
     },
     {
-        "position": "前端工程师-小程序",
+        "position": "前端工程师-微信小程序和小游戏方向",
         "requirements": [
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "3年以上Web前端经验，5年以上开发经验；"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "熟练掌握HTML、CSS3、ES6、webpack等规范和技术；"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "熟悉W3C标准与ES5、ES6规范，熟悉Web语义化；"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "对前端技术发展有强烈兴趣，有优秀学习能力和强烈的进取心；"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "良好的团队合作精神和沟通能力；"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "有微信公众号、微信小程序或者微信小游戏项目经验，有成功作品优先。"
             }
         ]
     },
     {
-        "position": "前端工程师-小游戏",
+        "position": "前端工程师-混合App方向",
         "requirements": [
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "3年以上Web前端经验，5年以上开发经验"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "熟练掌握HTML、CSS3、ES6、webpack等规范和技术"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "对前端技术发展有强烈兴趣，有优秀学习能力和强烈的进取心；"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "良好的团队合作精神和沟通能力；"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "熟悉Hybrid App、Web App实现原理，熟悉Hybrid App、Web App开发，能提供完整的Hybrid App、Web App技术方案"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "熟悉移动端Web性能优化，熟悉Webview性能优化"
+            }
+        ]
+    },
+    {
+        "position": "高级前端工程师",
+        "requirements": [
+            {
+                "info": "3年以上Web前端经验，5年以上开发经验"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "熟练掌握HTML、CSS3、ES6、webpack等规范和技术"
+            },
+            {
+                "info": "熟悉W3C标准与ES5、ES6规范，熟悉Web语义化"
+            },
+            {
+                "info": "熟练掌握盒模型、常用布局以及浏览器和移动设备兼容性"
+            },
+            {
+                "info": "熟练使用至少一种JS框架，熟悉Aangular、Vue、React等，掌握其原理，能独立开发常用组件"
+            },
+            {
+                "info": "对前端技术发展有强烈兴趣，有优秀学习能力和强烈的进取心；"
+            },
+            {
+                "info": "良好的团队合作精神和沟通能力；"
+            },
+            {
+                "info": "熟悉Web性能优化"
+            },
+            {
+                "info": "熟悉各种常用设计模式和常用MV*框架"
+            },
+            {
+                "info": "熟悉前端自动化和工程化，熟悉webpack"
             }
         ]
     },
@@ -84,16 +110,28 @@
         "position": "前端架构师",
         "requirements": [
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "精通各种Web前端技术（HTML/CSS/Javascript等)，熟练跨浏览器、跨终端的开发；"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "有大型网站前端架构、前端性能、可访问性、可维护性等方面的实践经验；"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "至少熟练使用一门非前端脚本语言（如：NodeJS /Java/PHP等），并有后端项目经验；"
             },
             {
-                "info": "introintrointrointrointrointrointrointro"
+                "info": "掌握一种 Javascript MVVM/MVC/MVP 框架，Angular/Vue/React为佳，了解其中原理；"
+            },
+            {
+                "info": "熟悉 Sass/Less 等样式中间语言，TypeScript等Javascript中间语言者为佳；"
+            },
+            {
+                "info": "技术视野广阔，有主导前端技术方案设计的能力和经验；"
+            },
+            {
+                "info": "有一定的项目管理、团队管理经验；"
+            },
+            {
+                "info": "有开源项目的成功经验优先考虑。"
             }
         ]
     }

@@ -24,7 +24,7 @@
     }
   },
   {
-    "title": "5. 创建Git分支",
+    "title": "5. 创建Git项目",
     "data": {
       "url": "create_git.md"
     }
@@ -68,7 +68,7 @@
   {
     "title": "12. Bug Fixed",
     "data": {
-      "url": "bux_fixed.md"
+      "url": "bug_fixed.md"
     }
   },
   {
