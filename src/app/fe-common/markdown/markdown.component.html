@@ -1,3 +1,10 @@
 <main>
   <div class="container" [innerHtml]="safeHtml"></div>
+  <div class="fixed-menu">
+    <nz-anchor [nzOffsetTop]="84">
+      <ng-container *ngFor="let anchor of anchors">
+        <nz-link nzHref="#{{anchor.id}}" nzTitle="{{anchor.title}}"></nz-link>
+      </ng-container>
+    </nz-anchor>
+  </div>
 </main>

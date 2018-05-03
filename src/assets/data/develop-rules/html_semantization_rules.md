@@ -6,7 +6,7 @@
 
 ### 常见标签语义  
 
-<table border="1" width="100%">
+<table border="1">
     <tr>
         <td>标签</td>
         <td>语义</td>

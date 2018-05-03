@@ -1,7 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import * as marked from 'marked';
 import * as hljs from 'highlight.js';
-import { SafeHtml } from '@angular/platform-browser';
+import { SafeHtml, DomSanitizer } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 
 marked.setOptions({
@@ -27,20 +27,44 @@ marked.setOptions({
 })
 export class MarkdownComponent implements OnInit {
 
-
   safeHtml: SafeHtml = 'loading ...';
 
+  anchors: any[];
+
   @Input() set path(path: string) {
-    if (path) {
+    if (path && path !== '') {
       this.http.get(path, { responseType: 'text' }).toPromise().then(data => {
-        this.safeHtml = marked(data).replace(/\<pre\>/g, '<pre class="hljs">');
+        let md_data = marked(data).replace(/\<pre\>/g, '<pre class="hljs">');
+        const hs = md_data.match(/\<h[1-9]+ id=".+"\>.+\<\/h[1-9]+\>?/g);
+        if (hs && hs.length > 0) {
+          this.anchors = [];
+          for (let i = 0; i < hs.length; i++) {
+            const h = hs[i];
+            const title = h.replace(/(\<h[1-9]+ id=".+"\>)|(<\/h[1-9]+\>)/g, '');
+            const id = `md_${i}`;
+            const hSize = h.match(/\<\/h[1-9]+>/)[0].match(/[1-9]+/);
+            const h_new = `<h${hSize} id="${id}">${title}</h${hSize}>`;
+            md_data = md_data.replace(h, h_new);
+            // 生成锚点数据
+            const anchor = {
+              title: title,
+              id: id
+            };
+            this.anchors.push(anchor);
+          }
+        } else {
+          this.anchors = [];
+        }
+        this.safeHtml = this.sanitized.bypassSecurityTrustHtml(md_data);
       }).catch(err => {
         console.log(err);
       });
+    } else {
+      this.anchors = [];
     }
   }
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private sanitized: DomSanitizer) {
 
   }
 
