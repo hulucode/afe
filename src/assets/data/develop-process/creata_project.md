@@ -4,7 +4,7 @@
 如果你的电脑里没有 Node.js®和 npm，请安装它们。
 
 ```
-npm install -g @angular/cli
+npm install -g @angular/cli@1.7.3
 ```
 
 #### angular/cli 常用命令
@@ -94,7 +94,25 @@ ng serve 命令会启动开发服务器，监听文件变化，并在修改这�
 
 使用 --open（或 -o）参数可以自动打开浏览器并访问 http://localhost:4200/。
 
-浏览器会自动刷新，并具有修改之后的标题。不错，不过它还可以更好看一点。
+<p style="color:red">小提示：</p>
+
+配置代理，以后不需要用Ngix了，更方便快捷！
+
+1. package.json 修改 script 命令 start 作如下配置：
+
+```
+"start": "ng serve --proxy-config proxy.conf.json" 
+```
+
+2. 创建 proxy.conf.json 文件存放在项目根目录下，作如下配置：
+
+```
+{
+  "/xxx": {
+    "target": "http://xxx:xxx"
+  }
+}
+```
 
 ### 项目文件概览
 Angular CLI 项目是做快速试验和开发企业解决方案的基础。
