@@ -253,15 +253,13 @@
 
   ```javascript
   const someStack = [];
+
+  /* Not recommended */
+  someStack[someStack.length] = 'abracadabra';
+
+  /* Recommended */
+  someStack.push('abracadabra');
   ```
-
-
-    /* Not recommended */
-    someStack[someStack.length] = 'abracadabra';
-
-    /* Recommended */
-    someStack.push('abracadabra');
-    ```
 
 <a name="es6-array-spreads"></a>
 

@@ -1,4 +1,4 @@
-### 脚手架 Angular CLI
+### Angular + Angular CLI
 
 <p style="color:red">version: 1.7.3</p>
 
