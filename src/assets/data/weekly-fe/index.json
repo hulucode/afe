@@ -1,11 +1,11 @@
 [
-    {
-        "title": "第一期",
-        "time": "2018-5-5",
-        "author": "王猛",
-        "status": "undone",
-        "data": {
-            "url": "1.md"
-        }
+  {
+    "title": "第一期",
+    "time": "2018-5-5",
+    "author": "王猛",
+    "status": "done",
+    "data": {
+      "url": "1.md"
     }
+  }
 ]
