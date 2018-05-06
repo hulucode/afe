@@ -1,4 +1,4 @@
-1. 设置开发环境
+### 设置开发环境
 在开始工作之前，你必须设置好开发环境。
 
 如果你的电脑里没有 Node.js®和 npm，请安装它们。
@@ -63,7 +63,7 @@ npm install -g @angular/cli@1.7.3
 
 <div style="height:20px"></div>
 
-#### 小知识点
+#### 小知识点1
 
 ```
 ng g module new-module to create a new module
@@ -72,7 +72,22 @@ call ng g component new-module/new-component
 
 这样会自动把创建的组件、管道添加进指定的模块内部。 
 
-2. 创建新项目
+#### 小知识点2
+
+1. 前言
+经常碰到启动服务的时候端口被占用。这种情况，可以注销或重启（注销不一定有用）。下面介绍另一种方法--在终端中查找占用端口的进程并杀死，然后重启服务。
+
+2. 查看端口
+终端输入：lsof -i tcp:port 将port换成被占用的端口(如：80、4200)
+将会出现占用端口的进程信息。
+
+3. kill进程
+sudo kill $(sudo lsof -t -i:4200)或
+sudo kill `sudo lsof -t -i:4200`杀死对应的进程
+
+4. 重启服务
+
+### 创建新项目
 打开终端窗口。
 
 运行下列命令来生成一个新项目以及应用的骨架代码：
@@ -81,7 +96,7 @@ call ng g component new-module/new-component
 ng new my-app
 ```
 
-3. 启动开发服务器
+### 启动开发服务器
 进入项目目录，并启动服务器。
 
 ```
