@@ -104,6 +104,12 @@
         "data": {
           "url": "ng_ts_rules.md"
         }
+      },
+      {
+        "title": "风格指南",
+        "data": {
+          "url": "ng_style_guide_rules.md"
+        }
       }
     ]
   }
