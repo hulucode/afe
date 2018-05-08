@@ -42,49 +42,55 @@
     }
   },
   {
-    "title": "8. 模块划分",
+    "title": "8. 公共部分",
+    "data": {
+      "url": "common_part.md"
+    }
+  },
+  {
+    "title": "9. 模块划分",
     "data": {
       "url": "module_split.md"
     }
   },
   {
-    "title": "9. 代码实现",
+    "title": "10. 代码实现",
     "data": {
       "url": "code_resolve.md"
     }
   },
   {
-    "title": "10. Code Review",
+    "title": "11. Code Review",
     "data": {
       "url": "code_review.md"
     }
   },
   {
-    "title": "11. 发布测试环境",
+    "title": "12. 发布测试环境",
     "data": {
       "url": "publish_test_environment.md"
     }
   },
   {
-    "title": "12. Bug Fixed",
+    "title": "13. Bug Fixed",
     "data": {
       "url": "bug_fixed.md"
     }
   },
   {
-    "title": "13. Code Review",
+    "title": "14. Code Review",
     "data": {
       "url": "code_review.md"
     }
   },
   {
-    "title": "14. 发布生产环境",
+    "title": "15. 发布生产环境",
     "data": {
       "url": "publish_production_environment.md"
     }
   },
   {
-    "title": "15. 日常维护",
+    "title": "16. 日常维护",
     "data": {
       "url": "daily_maintenance.md"
     }
