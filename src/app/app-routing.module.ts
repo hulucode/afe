@@ -18,6 +18,10 @@ const appRoutes: Routes = [
         loadChildren: './content/develop-rules/develop-rules.module#DevelopRulesModule'
       },
       {
+        path: 'ui-rules',
+        loadChildren: './content/ui-rules/ui-rules.module#UIRulesModule'
+      },
+      {
         path: 'develop-process',
         loadChildren: './content/develop-process/develop-process.module#DevelopProcessModule'
       },

@@ -10,9 +10,14 @@ export class HeaderComponent implements OnInit {
 
   tabs = [
     {
-      name: '研发规范',
+      name: '编码规范',
       icon: 'anticon anticon-file-text',
       routerLink: '/develop-rules'
+    },
+    {
+      name: 'UI 规范',
+      icon: 'anticon anticon-desktop',
+      routerLink: '/ui-rules'
     },
     {
       name: '开发流程',

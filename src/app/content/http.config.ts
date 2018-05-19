@@ -4,6 +4,7 @@ export class HttpConfig {
     static urlRoot = `./assets/data`;
 
     static developRulesUrl = `${HttpConfig.urlRoot}/develop-rules`;
+    static uiRulesUrl = `${HttpConfig.urlRoot}/ui-rules`;
     static developProcessUrl = `${HttpConfig.urlRoot}/develop-process`;
     static weeklyFeUrl = `${HttpConfig.urlRoot}/weekly-fe`;
     static dailyAffairsUrl = `${HttpConfig.urlRoot}/daily-affairs`;
