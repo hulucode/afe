@@ -36,6 +36,10 @@ const appRoutes: Routes = [
       {
         path: 'team-mien',
         loadChildren: './content/team-mien/team-mien.module#TeamMienModule'
+      },
+      {
+        path: 'luck',
+        loadChildren: './content/luck/luck.module#LuckModule'
       }
     ]
   },

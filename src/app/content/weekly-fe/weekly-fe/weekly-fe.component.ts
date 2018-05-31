@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpConfig } from '../../http.config';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-weekly-fe',
@@ -11,7 +12,7 @@ export class WeeklyFeComponent implements OnInit {
 
   _timelines: any[];
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,private router:Router) {
     this.http.get(`${HttpConfig.weeklyFeUrl}/index.json`).toPromise().then(data => {
       const timelines = data as any[];
       for (let i = 0; i < timelines.length; i++) {
@@ -23,6 +24,10 @@ export class WeeklyFeComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+
+  createPerson() {
+    this.router.navigateByUrl('/luck');
   }
 
 }

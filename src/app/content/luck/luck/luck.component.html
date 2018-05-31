@@ -1,0 +1,19 @@
+<main #main>
+  <div class="info" #info>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <ng-container *ngFor="let member of _members">
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container">
+              <img src="{{member.img}}">
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+    <div class="person" *ngIf="personImgShow"> <img src="{{personImg}}"></div>
+  </div>
+  <div class="actionBtn">
+    <button nz-button nzType="primary" (click)="actionDo()">{{action}}</button>
+  </div>
+</main>

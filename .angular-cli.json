@@ -21,9 +21,12 @@
       "styles": [
         "styles.css",
         "../node_modules/ng-zorro-antd/src/ng-zorro-antd.less",
-        "../node_modules/highlight.js/styles/docco.css"
+        "../node_modules/highlight.js/styles/docco.css",
+        "../node_modules/swiper/dist/css/swiper.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/swiper/dist/js/swiper.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

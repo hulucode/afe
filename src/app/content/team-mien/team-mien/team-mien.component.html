@@ -1,5 +1,7 @@
 <main>
-  <div class="slogan">We are a Team , Everything is nothing . <button nz-button nzType="primary" [nzSize]="'small'" (click)="teamBuilding()">团队建设</button></div>
+  <div class="slogan">We are a Team , Everything is nothing .
+    <button nz-button nzType="primary" [nzSize]="'small'" (click)="teamBuilding()">团队建设</button>
+  </div>
   <div class="container">
     <ng-container *ngFor="let member of _members">
       <div class="content" (click)="memberInfo(member)">

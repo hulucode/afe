@@ -15,11 +15,6 @@ export class HeaderComponent implements OnInit {
       routerLink: '/develop-rules'
     },
     {
-      name: 'UI 规范',
-      icon: 'anticon anticon-desktop',
-      routerLink: '/ui-rules'
-    },
-    {
       name: '开发流程',
       icon: 'anticon anticon-rocket',
       routerLink: '/develop-process'
@@ -38,6 +33,11 @@ export class HeaderComponent implements OnInit {
       name: '我们团队',
       icon: 'anticon anticon-team',
       routerLink: '/team-mien'
+    },
+    {
+      name: '幸运儿',
+      icon: 'anticon anticon-smile-o',
+      routerLink: '/luck'
     }
   ];
 
