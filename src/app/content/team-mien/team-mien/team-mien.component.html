@@ -4,9 +4,9 @@
   </div>
   <div class="container">
     <ng-container *ngFor="let member of _members">
-      <div class="content" (click)="memberInfo(member)">
+      <div class="content">
         <div class="member">
-          <img class="img" src="{{member.img}}">
+          <img class="img" src="{{member.img}}" (load)="imgLoad()">
           <div class="name">{{member.name}}</div>
         </div>
         <div class="intro">

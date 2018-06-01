@@ -49,7 +49,6 @@ export class LuckComponent implements OnInit {
       _members.sort(()=>{
         return 0.5 - Math.random();
       });
-      console.log(_members)
       for (let i = 0; i < _members.length; i++) {
         _members[i].img = `${HttpConfig.teamMienUrl}/${_members[i].img}`;
       }

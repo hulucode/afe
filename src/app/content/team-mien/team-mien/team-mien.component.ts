@@ -14,6 +14,8 @@ export class TeamMienComponent implements OnInit {
 
   items: any[];
 
+  imgloadNum = 0;
+
   // 定义每一列之间的间隙 为10像素
   gap = 15;
 
@@ -24,6 +26,9 @@ export class TeamMienComponent implements OnInit {
   ngOnInit() {
     this.http.get(`${HttpConfig.teamMienUrl}/index.json`).toPromise().then(data => {
       const _members = data as any[];
+      _members.sort(()=>{
+        return 0.5 - Math.random();
+      });
       for (let i = 0; i < _members.length; i++) {
         _members[i].img = `${HttpConfig.teamMienUrl}/${_members[i].img}`;
       }
@@ -43,6 +48,13 @@ export class TeamMienComponent implements OnInit {
 
   teamBuilding() {
     this.router.navigateByUrl('/team-building');
+  }
+
+  imgLoad() {
+    this.imgloadNum += 1;
+    if (this.items && this.items.length === this.imgloadNum) {
+      this.waterFall();
+    }
   }
 
   // 封装成一个函数
@@ -81,7 +93,7 @@ export class TeamMienComponent implements OnInit {
         arr[index] = arr[index] + this.items[i].offsetHeight + this.gap;
       }
     }
-    // 设置低级的高度
+    // 设置父级的高度
     this.ref.nativeElement.querySelector('main').style.height = (this.maxYelement().maxHeight + 80) + 'px';
   }
 
