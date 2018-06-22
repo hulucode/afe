@@ -5,7 +5,7 @@
   <div class="container">
     <ng-container *ngFor="let member of _members">
       <div class="content">
-        <div class="member">
+        <div class="member" [ngClass]="{'gray': member.state == 0}">
           <img class="img" src="{{member.img}}" (load)="imgLoad()">
           <div class="name">{{member.name}}</div>
         </div>

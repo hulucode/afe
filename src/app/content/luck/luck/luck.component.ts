@@ -35,7 +35,6 @@ export class LuckComponent implements OnInit {
     el.style.height = (document.documentElement.clientHeight - 188) + 'px';
 
     window.addEventListener('resize', () => {
-      const el = this.main.nativeElement as HTMLElement;
       el.style.height = (document.documentElement.clientHeight - 188) + 'px';
     });
 
@@ -46,13 +45,17 @@ export class LuckComponent implements OnInit {
 
     this.http.get(`${HttpConfig.teamMienUrl}/index.json`).toPromise().then(data => {
       const _members = data as any[];
-      _members.sort(()=>{
+      _members.sort(() => {
         return 0.5 - Math.random();
       });
+      const m = [];
       for (let i = 0; i < _members.length; i++) {
         _members[i].img = `${HttpConfig.teamMienUrl}/${_members[i].img}`;
+        if (_members[i].state === '1') {
+          m.push(_members[i]);
+        }
       }
-      this._members = _members;
+      this._members = m;
       setTimeout(() => {
         // 开始循环
         this.swiper = new window['Swiper']('.swiper-container', {
