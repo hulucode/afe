@@ -25,7 +25,7 @@ export class TeamMienComponent implements OnInit {
 
   ngOnInit() {
     this.http.get(`${HttpConfig.teamMienUrl}/index.json`).toPromise().then(data => {
-      const _members = data as any[];
+      const _members = data['members'] as any[];
       _members.sort(() => {
         return 0.5 - Math.random();
       });

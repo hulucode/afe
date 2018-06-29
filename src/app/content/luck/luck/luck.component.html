@@ -14,6 +14,7 @@
     <div class="person" *ngIf="personImgShow"> <img src="{{personImg}}"></div>
   </div>
   <div class="actionBtn">
-    <button nz-button nzType="primary" (click)="actionDo()">{{action}}</button>
+    <button nz-button nzType="primary" (click)="actionWeeklyDo()" class="actionWeekly">{{actionWeekly}}</button>
+    <button nz-button nzType="primary" (click)="actionSharedDo()" class="actionShared">{{actionShared}}</button>
   </div>
 </main>
