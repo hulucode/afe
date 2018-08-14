@@ -93,7 +93,7 @@
     "title": "第11期",
     "time": "2018-7-13",
     "author": "李凡",
-    "status": "doing",
+    "status": "done",
     "data": {
       "url": "11.md"
     }
@@ -102,7 +102,7 @@
     "title": "第12期",
     "time": "2018-7-21",
     "author": "李浩",
-    "status": "doing",
+    "status": "done",
     "data": {
       "url": "12.md"
     }
@@ -111,9 +111,36 @@
     "title": "第13期",
     "time": "2018-7-28",
     "author": "聂叶陈",
-    "status": "doing",
+    "status": "done",
     "data": {
       "url": "13.md"
+    }
+  },
+  {
+    "title": "第14期",
+    "time": "2018-8-4",
+    "author": "唐立广",
+    "status": "done",
+    "data": {
+      "url": "14.md"
+    }
+  },
+  {
+    "title": "第15期",
+    "time": "2018-8-11",
+    "author": "穆玉青",
+    "status": "doing",
+    "data": {
+      "url": "15.md"
+    }
+  },
+  {
+    "title": "第16期",
+    "time": "2018-8-18",
+    "author": "王首运",
+    "status": "done",
+    "data": {
+      "url": "16.md"
     }
   }
 ]

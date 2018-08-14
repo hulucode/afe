@@ -145,6 +145,30 @@
             "state": "1",
             "weekly": "0",
             "shared": "0"
+        },
+        {
+            "name": "唐立广",
+            "img": "images/唐立广.jpeg",
+            "intro": "",
+            "state": "1",
+            "weekly": "0",
+            "shared": "0"
+        },
+        {
+            "name": "穆玉青",
+            "img": "images/穆玉青.jpg",
+            "intro": "",
+            "state": "1",
+            "weekly": "0",
+            "shared": "0"
+        },
+        {
+            "name": "刘东东",
+            "img": "images/刘东东.jpeg",
+            "intro": "",
+            "state": "1",
+            "weekly": "0",
+            "shared": "0"
         }
     ]
 }
