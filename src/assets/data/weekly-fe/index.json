@@ -142,5 +142,32 @@
     "data": {
       "url": "16.md"
     }
+  },
+  {
+    "title": "第17期",
+    "time": "2018-8-25",
+    "author": "王猛",
+    "status": "done",
+    "data": {
+      "url": "17.md"
+    }
+  },
+  {
+    "title": "第18期",
+    "time": "2018-8-30",
+    "author": "刘东东",
+    "status": "done",
+    "data": {
+      "url": "18.md"
+    }
+  },
+  {
+    "title": "第19期",
+    "time": "2018-9-7",
+    "author": "阎树兵",
+    "status": "done",
+    "data": {
+      "url": "19.md"
+    }
   }
 ]

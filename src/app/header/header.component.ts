@@ -33,12 +33,13 @@ export class HeaderComponent implements OnInit {
       name: '我们团队',
       icon: 'anticon anticon-team',
       routerLink: '/team-mien'
-    },
-    {
-      name: '幸运儿',
-      icon: 'anticon anticon-smile-o',
-      routerLink: '/luck'
     }
+    // ,
+    // {
+    //   name: '幸运儿',
+    //   icon: 'anticon anticon-smile-o',
+    //   routerLink: '/luck'
+    // }
   ];
 
   nzSelectedIndex = 0;
