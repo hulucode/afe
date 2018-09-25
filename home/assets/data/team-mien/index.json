@@ -54,7 +54,7 @@
             "name": "东雪",
             "img": "images/东雪.jpeg",
             "intro": "",
-            "state": "1",
+            "state": "0",
             "weekly": "1",
             "shared": "1"
         },
@@ -62,7 +62,7 @@
             "name": "刘偲飞",
             "img": "images/刘偲飞.jpeg",
             "intro": "",
-            "state": "1",
+            "state": "0",
             "weekly": "1",
             "shared": "0"
         },
