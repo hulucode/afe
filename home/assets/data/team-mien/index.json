@@ -169,6 +169,30 @@
             "state": "1",
             "weekly": "0",
             "shared": "0"
+        },
+        {
+            "name": "孙健",
+            "img": "images/孙健.jpeg",
+            "intro": "",
+            "state": "1",
+            "weekly": "0",
+            "shared": "0"
+        },
+        {
+            "name": "庞兰柱",
+            "img": "images/庞兰柱.jpeg",
+            "intro": "",
+            "state": "1",
+            "weekly": "0",
+            "shared": "0"
+        },
+        {
+            "name": "殷超颖",
+            "img": "images/殷超颖.jpeg",
+            "intro": "",
+            "state": "1",
+            "weekly": "0",
+            "shared": "0"
         }
     ]
 }
