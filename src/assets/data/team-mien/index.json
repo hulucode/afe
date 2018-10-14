@@ -193,6 +193,14 @@
             "state": "1",
             "weekly": "0",
             "shared": "0"
+        },
+        {
+            "name": "李征",
+            "img": "images/李征.jpeg",
+            "intro": "",
+            "state": "1",
+            "weekly": "0",
+            "shared": "0"
         }
     ]
 }
