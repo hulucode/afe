@@ -19,11 +19,11 @@ export class HeaderComponent implements OnInit {
       icon: 'anticon anticon-rocket',
       routerLink: '/develop-process'
     },
-    {
-      name: '日常事务',
-      icon: 'anticon anticon-appstore-o',
-      routerLink: '/daily-affairs'
-    },
+    // {
+    //   name: '日常事务',
+    //   icon: 'anticon anticon-appstore-o',
+    //   routerLink: '/daily-affairs'
+    // },
     {
       name: '前端周刊',
       icon: 'anticon anticon-profile',
