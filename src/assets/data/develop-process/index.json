@@ -46,53 +46,5 @@
     "data": {
       "url": "common_part.md"
     }
-  },
-  {
-    "title": "9. 模块划分",
-    "data": {
-      "url": "module_split.md"
-    }
-  },
-  {
-    "title": "10. 代码实现",
-    "data": {
-      "url": "code_resolve.md"
-    }
-  },
-  {
-    "title": "11. Code Review",
-    "data": {
-      "url": "code_review.md"
-    }
-  },
-  {
-    "title": "12. 发布测试环境",
-    "data": {
-      "url": "publish_test_environment.md"
-    }
-  },
-  {
-    "title": "13. Bug Fixed",
-    "data": {
-      "url": "bug_fixed.md"
-    }
-  },
-  {
-    "title": "14. Code Review",
-    "data": {
-      "url": "code_review.md"
-    }
-  },
-  {
-    "title": "15. 发布生产环境",
-    "data": {
-      "url": "publish_production_environment.md"
-    }
-  },
-  {
-    "title": "16. 日常维护",
-    "data": {
-      "url": "daily_maintenance.md"
-    }
   }
 ]

@@ -1,12 +1,12 @@
 <main>
   <div class="header">
-    <img class="logo" src="./assets/images/tdlogo2.png" (click)="openSite('https://www.talkingdata.com')">
+    <img class="logo" src="./assets/images/葫芦.png" (click)="openSite('https://www.talkingdata.com')">
     <div class="company">
       <div class="team">
         <button class="back-btn" nz-button nzType="default" nzShape="circle" nzSize="small" (click)="backAction()">
           <i class="anticon anticon-rollback"></i>
         </button>
-        <span class="welcome">TalkingData FE Team 诚邀您的加入 .</span>
+        <span class="welcome">HULUCODE FE Team 诚邀您的加入 .</span>
         <button class="send-resume" nz-button nzType="primary" [nzSize]="'small'" (click)="sendResume()">简历投递</button>
       </div>
     </div>
@@ -29,6 +29,6 @@
   <nz-modal nzWrapClassName="vertical-center-modal" [(nzVisible)]="_isVisibleMiddle" nzTitle="简历投递方式" [nzFooter]="null" (nzOnCancel)="handleCancelMiddle()">
     <p>1. 邮件标题请注明应聘岗位（如：前端架构师）</p>
     <p>2. 请将简历以附件的形式发送（注：要有电话等联系方式）</p>
-    <p>3. 投递邮件：shouyun.wang@tendcloud.com</p>
+    <p>3. 投递邮件：hulucode@163.com</p>
   </nz-modal>
 </main>
