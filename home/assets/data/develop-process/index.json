@@ -1,0 +1,98 @@
+[
+  {
+    "title": "1. 需求评审",
+    "data": {
+      "url": "requirements_appraisal.md"
+    }
+  },
+  {
+    "title": "2. 任务分解",
+    "data": {
+      "url": "task_disintegrate.md"
+    }
+  },
+  {
+    "title": "3. 技术选型",
+    "data": {
+      "url": "technology_selection.md"
+    }
+  },
+  {
+    "title": "4. 申请环境",
+    "data": {
+      "url": "apply_environment.md"
+    }
+  },
+  {
+    "title": "5. 创建Git项目",
+    "data": {
+      "url": "create_git.md"
+    }
+  },
+  {
+    "title": "6. 创建工程",
+    "data": {
+      "url": "creata_project.md"
+    }
+  },
+  {
+    "title": "7. 提供Jenkins脚本",
+    "data": {
+      "url": "provide_script.md"
+    }
+  },
+  {
+    "title": "8. 公共部分",
+    "data": {
+      "url": "common_part.md"
+    }
+  },
+  {
+    "title": "9. 模块划分",
+    "data": {
+      "url": "module_split.md"
+    }
+  },
+  {
+    "title": "10. 代码实现",
+    "data": {
+      "url": "code_resolve.md"
+    }
+  },
+  {
+    "title": "11. Code Review",
+    "data": {
+      "url": "code_review.md"
+    }
+  },
+  {
+    "title": "12. 发布测试环境",
+    "data": {
+      "url": "publish_test_environment.md"
+    }
+  },
+  {
+    "title": "13. Bug Fixed",
+    "data": {
+      "url": "bug_fixed.md"
+    }
+  },
+  {
+    "title": "14. Code Review",
+    "data": {
+      "url": "code_review.md"
+    }
+  },
+  {
+    "title": "15. 发布生产环境",
+    "data": {
+      "url": "publish_production_environment.md"
+    }
+  },
+  {
+    "title": "16. 日常维护",
+    "data": {
+      "url": "daily_maintenance.md"
+    }
+  }
+]
